@@ -37,15 +37,15 @@ type SearchEngines map[string]SearchEngine
 var searchEngines = SearchEngines{
 	"nzbindex": SearchEngine{
 		name:        "NZBIndex",
-		searchURL:   "https://nzbindex.com/search/json?sort=agedesc&hidespam=1&q=%s",
-		downloadURL: "https://nzbindex.com/download/%s/",
+		searchURL:   "https://nzbindex.nl/search/json?sort=agedesc&hidespam=1&q=%s",
+		downloadURL: "https://nzbindex.nl/download/%s/",
 		jsonPath:    "results.0.id",
 		search:      jsonSearch,
 	},
 	"nzbindex_beta": SearchEngine{
 		name:        "NZBIndex Beta",
-		searchURL:   "https://beta.nzbindex.com/api/search?q=%s",
-		downloadURL: "https://beta.nzbindex.com/api/download/%s.nzb",
+		searchURL:   "https://beta.nzbindex.nl/api/search?q=%s",
+		downloadURL: "https://beta.nzbindex.nl/api/download/%s.nzb",
 		jsonPath:    "data.content.0.id",
 		search:      jsonSearch,
 	},
