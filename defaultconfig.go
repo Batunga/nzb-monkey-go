@@ -29,6 +29,8 @@ nzbsavepath = "./Downloads/nzb"
 category_folder = false
 # Don't execute default programm for .nzb
 dontexecute = true
+# Save nzb files as compressed zip files
+save_as_zip = false
 # Delete old NZB files from nzbsavepath
 clean_up_enable = false
 # NZB files older than x days will be deleted
@@ -55,6 +57,8 @@ basepath = ""
 category = ""
 # Add the nzb paused to the queue
 addpaused = false
+# Add compression on upload, either "none" or "zip"
+compression = "none"
 
 [NZBGET]
 # NZBGet Host

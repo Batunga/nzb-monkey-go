@@ -23,6 +23,7 @@ type Execute struct {
 	Nzbsavepath     string `ini:"nzbsavepath"`
 	Category_folder bool   `ini:"category_folder"`
 	Dontexecute     bool   `ini:"dontexecute"`
+	SaveAsZip       bool   `ini:"save_as_zip"`
 	CleanUpEnable   bool   `ini:"clean_up_enable"`
 	CleanUpMaxAge   int    `ini:"clean_up_max_age"`
 }
@@ -38,6 +39,7 @@ type SABnzbd struct {
 	Basepath          string `ini:"basepath"`
 	Category          string `ini:"category"`
 	Addpaused         bool   `ini:"addpaused"`
+	Compression       string `ini:"compression"`
 }
 
 type NZBGet struct {
